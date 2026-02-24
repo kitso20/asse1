@@ -13,3 +13,5 @@ def classify_temperature(celsius):
     else:
         return "Hot"
     
+def sum_even_numbers(numbers):
+    return sum([i for i in numbers if i % 2 == 0])
