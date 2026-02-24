@@ -15,3 +15,16 @@ def classify_temperature(celsius):
     
 def sum_even_numbers(numbers):
     return sum([i for i in numbers if i % 2 == 0])
+
+def fizz_buzz_list(n):
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result.append("FizzBuzz")
+        elif i % 3 == 0:
+            result.append("Fizz")
+        elif i % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(str(i))
+    return result
